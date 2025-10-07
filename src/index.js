@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Hero from './Section/Hero/hero.jsx';
+import About from './Section/About/about.js'
+import Header from "./Component/Header/header.js"
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>
 );
 

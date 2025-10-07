@@ -1,0 +1,86 @@
+nav{
+    position: relative;
+    z-index: 1;
+    position: fixed; 
+    font-weight: 500;
+    font-family: 'Bai Jamjuree', sans-serif;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.link-nav{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar.transparent .rocket-icon{
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition:
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    height 0.8s ease,
+    padding 0.8s ease;
+    z-index: 1000;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .navbar.transparent {
+    color: goldenrod;
+    background-color: transparent;
+    height: 100px;
+  }
+  
+  .navbar.opaque {
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    height: 55px;
+  }
+
+  .navbar.opaque .rocket-icon{
+    color: black;
+  }
+  .navbar.opaque .github{
+    color:black;
+  }
+  .rocket-icon {
+    font-size: 35px; 
+    transition: transform 0.3s ease;
+    margin-left: 300px;
+  }
+  
+  .rocket-icon:hover {
+    transform: rotate(-45deg) scale(1.1);
+  }
+
+  .github{
+    font-size: 35px;
+    color: white;
+    margin-right: 300px;
+  }
+
+ 
+
+  
+  
+  
+  
