@@ -1,0 +1,40 @@
+.skills {
+    margin: 85px 8% 0 8%;
+    text-align: center;
+  }
+    
+  /* Grille uniforme */
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 100%;
+  }
+  
+  /* Carte individuelle */
+  .skillCard {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skillCard:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skillCard .icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .skillCard span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  

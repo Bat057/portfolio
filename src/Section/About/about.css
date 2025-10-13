@@ -1,4 +1,19 @@
-.apropos .main{
-height: 850px;
-width: 100%;
+.apropos {
+    margin: 85px 8% 0 8%;
+}
+
+.apropos .main {
+    width: 100%;
+}
+
+.main p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .main p {
+        text-align: center;
+        font-size: 1rem;
+    }
 }

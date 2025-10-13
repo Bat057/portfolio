@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category": "front-end",
+    "title": "Page dynamique d'architecte d'intérieur",
+    "icon": "SiJavascript",
+    "thumbnail": "/images/projectJS.webp",
+    "alt": "Screenshot du projet",
+    "description": "Création d'une page web interactive pour une architecte d'intérieur, en communiquant avec une API et en manipulant le DOM avec JavaScript.",
+    "technologies": ["JavaScript", "HTML", "CSS", "API REST", "Figma", "GitHub", "VS Code"],
+    "context": "Projet réalisé dans le cadre de ma formation en développement web, avec pour objectif de transformer une maquette statique en une page dynamique et interactive. Le site présente les réalisations de l’architecte et intègre une interface d’administration sécurisée.",
+    "objectives": "Rendre la page dynamique grâce à la manipulation du DOM et à la gestion des événements utilisateurs. Permettre à l’administrateur de se connecter et d’ajouter de nouveaux médias via une modale, en communiquant avec une API back-end.",
+    "skills": "Récupération et affichage de données via API, gestion des formulaires et événements en JavaScript, intégration front-end fidèle aux maquettes Figma, mise en place d’une logique d’authentification côté client.",
+    "results": "Page dynamique et responsive avec affichage fluide des travaux, connexion fonctionnelle pour l’administrateur et upload d’images opérationnel. Code versionné et documenté sur GitHub.",
+    "improvements": "Ajout d’un système de filtrage avancé, renforcement de la gestion des erreurs API, optimisation des performances et sécurisation renforcée de la partie admin.",
+    "github": "https://github.com/Bat057/Javascript-project"
+  },
+  {
+    "id": 2,
+    "category": "front-end",
+    "title": "Application de location immobilière Kasa",
+    "icon": "FaReact",
+    "thumbnail": "/images/projectKasa.webp",
+    "alt": "Screenshot du projet",
+    "description": "Développement du front-end d'une application de location immobilière moderne et responsive avec React, Sass et Vite.",
+    "technologies": ["React", "React Router", "Sass", "Vite", "Node.js"],
+    "context": "Projet réalisé dans le cadre de ma formation en développement web, visant à créer une application front-end fidèle aux maquettes fournies et basée sur des données JSON simulées.",
+    "objectives": "Mettre en place une interface dynamique et fluide permettant la consultation de logements, avec un routage client efficace et une architecture de composants claire.",
+    "skills": "Maîtrise de React et React Router, structuration modulaire du code, intégration de Sass et d'animations CSS pour une meilleure expérience utilisateur.",
+    "results": "Application responsive, fidèle aux maquettes, avec navigation instantanée et affichage fluide des logements.",
+    "improvements": "Connexion à une API réelle, ajout d’un système de filtrage et de recherche, et mise en place de tests unitaires.",
+    "github": "https://github.com/Bat057/projet_react"
+  },
+  {
+    "id": 3,
+    "category": "back-end",
+    "title": "API de notation de livres",
+    "icon": "FaNodeJs",
+    "thumbnail": "/images/projetBackend1.webp",
+    "alt": "Screenshot du projet",
+    "description": "Développement du back-end d’un site de notation de livres avec Express et MongoDB, incluant gestion des images, authentification et opérations CRUD sécurisées.",
+    "technologies": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Multer", "MVC", "Docker"],
+    "context": "Projet réalisé dans le cadre de ma formation pour créer un serveur RESTful robuste permettant de gérer des livres, leurs notes et les utilisateurs, tout en respectant des pratiques d’optimisation énergétique (Green Code).",
+    "objectives": "Concevoir une API sécurisée suivant l’architecture MVC, implémenter les opérations CRUD pour les livres et notations, gérer l’upload et l’optimisation d’images, et mettre en place une authentification utilisateur fiable.",
+    "skills": "Modélisation de données avec Mongoose, conception d’API REST, gestion des fichiers (Multer), sécurisation avec JWT et bonnes pratiques (validation, sanitation), déploiement et respect du Green Code.",
+    "results": "API fonctionnelle avec endpoints documentés, authentification sécurisée, gestion d’images optimisée et calcul automatique des notes moyennes ; code structuré et versionné sur GitHub.",
+    "improvements": "Ajout de tests unitaires et d’intégration, mise en place d’un pipeline CI/CD, monitoring de performances et optimisation supplémentaire pour la consommation serveur.",
+    "github": "https://github.com/Bat057/Projet_backend"
+  }
+]
+
+  
