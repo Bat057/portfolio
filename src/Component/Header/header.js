@@ -1,25 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faRocket, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Header({ isHeroVisible }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const navClass = isMobile ? 'opaque' : (isHeroVisible ? 'transparent' : 'opaque');
 
   return (
-    <header className={`navbar ${isHeroVisible ? 'transparent' : 'opaque'}`}>
+    <header className={`navbar ${navClass}`}>
       <nav>
         <div className='nav-left'>
-          <a href="#hero" aria-label="Icone pour remonter à l'accueil du site"><FontAwesomeIcon icon={faRocket} className="rocket-icon" /></a>
+          <a href="#hero" aria-label="Remonter à l'accueil">
+            <FontAwesomeIcon icon={faRocket} className="rocket-icon" />
+          </a>
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
@@ -31,19 +37,16 @@ function Header({ isHeroVisible }) {
         </div>
 
         <div className='nav-right'>
-          <a href="https://github.com/Bat057" aria-label="GitHub de Baptiste Poussing" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Bat057" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className='github' />
           </a>
           <div className='icon-nav-mobile' onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars}/>
+            <FontAwesomeIcon icon={faBars}/>
+          </div>
         </div>
-        </div>
-       
       </nav>
     </header>
   );
 }
 
 export default Header;
-
-

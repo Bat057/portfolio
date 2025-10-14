@@ -1,13 +1,20 @@
-import React, { forwardRef, useEffect, useMemo, useState } from "react";
-import Particle from "../../Component/Particle/particle.js"
+import React, { useEffect } from "react";
+import Particle from "../../Component/Particle/particle.js";
+import { useInView } from 'react-intersection-observer';
 import './hero.css';
 
-const Hero = forwardRef((props, ref) => {
+function Hero({ onInViewChange }) {
+  const { ref, inView } = useInView({ threshold: 0.9 });
+
+  useEffect(() => {
+    onInViewChange(inView);
+  }, [inView, onInViewChange]);
+
   return (
     <section id="hero" ref={ref} className="hero">
-      <div className="particles-container" alt="Fond animé imitant un ciel étoilées" >
+      <div className="particles-container" alt="Fond animé imitant un ciel étoilé">
         <Particle />
-        </div>
+      </div>
       <div className="overlay-text">
         <h1 className="typing-container">
           <span className="mot">Bonjour, </span>
@@ -20,10 +27,8 @@ const Hero = forwardRef((props, ref) => {
           <span className='mot'>Développeur web</span>
         </h1>
       </div>
-      
     </section>
   );
-});
+}
 
 export default Hero;
-

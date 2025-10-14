@@ -7,7 +7,7 @@ import { ImMail } from "react-icons/im";
 
 function Contact() {
     const { ref, inView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0,
         rootMargin: '-150px 0px',
     });
@@ -50,6 +50,7 @@ function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        autoComplete="name"
                     />
                 </div>
 
@@ -62,6 +63,7 @@ function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        autoComplete="email"
                     />
                 </div>
 

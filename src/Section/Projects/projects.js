@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 import ProjectCard from "../../Component/ProjectCard/projectCard.js";
 import ProjectModal from "../../Component/ProjectModal/projectModal.js";
-import FilterButtons from "../../Component/FilterButtons/FilterButtons.js";
+import FilterButtons from "../../Component/FilterButtons/filterButtons.js";
 import projectsData from "../../data/projects.json";
 
 import './projects.css';
@@ -14,7 +14,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const { ref: sectionRef, inView: sectionInView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
     rootMargin: '120px 0px 0px 0px',
   });
@@ -28,7 +28,7 @@ export default function Projects() {
   const { ref: gridRef, inView: gridInView } = useInView({
     triggerOnce: false,
     threshold: 0.05,
-    rootMargin: '0px 0px 0px 0px',
+    rootMargin: '100px 0px 0px 0px',
   });
 
   useEffect(() => {

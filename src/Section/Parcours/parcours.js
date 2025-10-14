@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Parcours() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0,
     rootMargin: '-150px 0px',
   });
@@ -18,6 +18,16 @@ function Parcours() {
       title: 'CS50x – Harvard University',
       date: '2024',
       description: 'Online course',
+    },
+    {
+      title: 'Vendeur polyvalent - GammVert',
+      date: '2022-2024',
+      description: '',
+    },
+    {
+      title: 'Stages et CAP Pâtisserie',
+      date: '2018-2020',
+      description: '',
     },
     {
       title: '1ère année de Licence Informatique',

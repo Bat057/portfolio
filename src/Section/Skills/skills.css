@@ -3,15 +3,13 @@
     text-align: center;
   }
     
-  /* Grille uniforme */
   .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
     max-width: 100%;
   }
   
-  /* Carte individuelle */
   .skillCard {
     background: #f9f9f9;
     border-radius: 12px;

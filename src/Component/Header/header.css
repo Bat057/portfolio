@@ -56,10 +56,6 @@ nav {
     gap: 30px;
 }
 
-.nav-links a {
-    min-width: 85px;
-}
-
 .navbar.transparent {
     color: goldenrod;
     background-color: transparent;

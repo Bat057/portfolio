@@ -16,9 +16,9 @@ const skillsData = [
 
 function Skills() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
-    rootMargin: '-100px 0px',
+    rootMargin: '0px 0px 0px 0px',
   });
 
   return (
