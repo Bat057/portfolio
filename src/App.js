@@ -6,6 +6,7 @@ import Projects from './Section/Projects/projects.js';
 import Skills from './Section/Skills/skills.js';
 import Parcours from './Section/Parcours/parcours.js';
 import Contact from './Section/Contact/contact.js';
+import Footer from './Component/Footer/footer.js';
 
 function App() {
  
@@ -26,6 +27,7 @@ function App() {
       <Skills />
       <Parcours />
       <Contact />
+      <Footer />
     </>
   );
 }
