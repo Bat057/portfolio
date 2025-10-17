@@ -36,7 +36,7 @@
     "category": "back-end",
     "title": "API de notation de livres",
     "icon": "FaNodeJs",
-    "thumbnail": "/images/projetBackend1.webp",
+    "thumbnail": "/images/ProjetBackend1.webp",
     "alt": "Screenshot du projet",
     "description": "Développement du back-end d’un site de notation de livres avec Express et MongoDB, incluant gestion des images, authentification et opérations CRUD sécurisées.",
     "technologies": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Multer", "MVC", "Docker"],

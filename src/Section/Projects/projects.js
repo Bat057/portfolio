@@ -65,6 +65,7 @@ export default function Projects() {
             key={project.id}
             project={project}
             openModal={() => setSelectedProject(project)}
+            tabIndex="0"
           />
         ))}
       </div>
